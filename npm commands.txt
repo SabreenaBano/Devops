@@ -1,0 +1,25 @@
+udp6       0      0 ::1:323                 :::*                                712/chronyd
+root@ip-10-0-0-31:/home/ubuntu# history
+    1  ssh-keygen -t rsa -b 4096 -C "sabreena.bano@shellkode.com"
+    2  ~/.ssh/authorized_keys
+    3  cat ~/.ssh/authorized_keys
+    4  cd ~/.ssh
+    5  ls
+    6  cat id_rsa
+    7  cd /opt/
+    8  ls
+    9  vi j.pem
+   10  chmod 400 j.pem
+   11  ssh -i j.pem ubuntu@10.0.0.219
+   12  su ubuntu
+   13  cd /home/ubuntu/
+   14  l
+   15  vi package.json
+   16  pm2 start index.js
+   17  pm2 list
+   18  pm2 delete index
+   19  pm2 list
+   20  netstat -tulpn
+   21  apt install net-tools
+   22  netstat -tulpn
+   23  history
