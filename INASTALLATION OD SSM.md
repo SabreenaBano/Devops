@@ -44,7 +44,7 @@ Make sure your EC2 instance is associated with an IAM role that has the AmazonSS
 Connect to the EC2 instance using SSM (Session Manager).
 Install Jenkins by running the following commands:
     **sudo apt-get update
-      sudo apt-get install openjdk-11-jdk -y**
+     sudo apt install openjdk-17-jdk -y** doesn't support java 11
      sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
       https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
     echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
@@ -61,7 +61,8 @@ Install Jenkins by running the following commands:
   sudo apt-get install jenkins
   sudo systemctl enable jenkins
   sudo systemctl start jenkins
-  sudo systemctl status jenkins
+  
+  
 # Access Jenkins Dashboard:
 Jenkins runs on port 8080 by default. Since this server is in a private subnet, you need to access it either via VPN or through an Application Load Balancer (ALB).
 # Access Jenkins - Using Application Load Balancer (ALB)
