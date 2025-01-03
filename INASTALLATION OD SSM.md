@@ -61,6 +61,8 @@ Install Jenkins by running the following commands:
   sudo apt-get install jenkins
   sudo systemctl enable jenkins
   sudo systemctl start jenkins
+  cat /etc/default/jenkins | grep HTTP_PORT (to check port)
+
   
   
 # Access Jenkins Dashboard:
